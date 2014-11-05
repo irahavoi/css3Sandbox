@@ -25,8 +25,8 @@
       }
 
       #static:hover{
-        -webkit-animation: rotate 1s ease-in-out; /* Chrome, Safari, Opera */
-        animation: myfirst 1s ease-in-out;
+        -webkit-animation: rotate 1s infinite; /* Chrome, Safari, Opera */
+        animation: rotate 1s ease-in-out;
       }
 
       #animateMe:hover{
@@ -49,21 +49,78 @@
 
       /* Chrome, Safari, Opera */
       @-webkit-keyframes myfirst {
-          0%   {left:0px;}
-          15%   {left:25px; width:90px;}
-          30%  {left:50px; width:70px;}
-          45%  {left:75px; width:90px;}
-          50%  {left:100px; width:70px;}
-          55%  {left:125px; width:90px;}
-          60%  {left:150px; width:70px;}
-          65%  {left:200px; width:90px;}
-          70%  {left:225px; width:70px;}
-          75%  {left:250px; width:90px;}
-          80%  {left:275px; width:70px;}
-          85%  {left:300px; width:90px;}
-          90%  {left:325px; width:70px;}
-          95%  {left:350px; width:90px;}
-          100% {left:365px; width:70px;}
+          0%   {
+            -webkit-transform: rotate(0deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+          }
+          15%   {
+            -webkit-transform: rotate(0deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+            left:25px; width:90px;
+          }
+          30%  {
+            -webkit-transform: rotate(0deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+            left:50px; width:70px;
+          }
+          45%  {
+            -webkit-transform: rotate(0deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(0deg);
+            left:75px; width:90px;
+          }
+          50%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:100px; width:70px;
+          }
+          55%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:125px; width:90px;
+          }
+          60%  {
+            -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:150px; width:70px;
+          }
+          65%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:200px; width:90px;
+          }
+          70%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:225px; width:70px;
+          }
+          75%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:250px; width:90px;
+          }
+          80%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:275px; width:70px;
+          }
+          85%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:300px; width:90px;
+          }
+          90%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:325px; width:70px;
+          }
+          95%  {
+            -webkit-transform: rotate(-30deg) ; /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+            left:350px;
+          }
+          100% {
+            left:365px;
+          }
       }
 
       /* Chrome, Safari, Opera */
@@ -78,21 +135,7 @@
 
       /* Standard syntax */
       @keyframes myfirst {
-          0%   {left:0px;}
-          15%   {left:25px; width:90px;}
-          30%  {left:50px; width:70px;}
-          45%  {left:75px; width:90px;}
-          50%  {left:100px; width:70px;}
-          55%  {left:125px; width:90px;}
-          60%  {left:150px; width:70px;}
-          65%  {left:200px; width:90px;}
-          70%  {left:225px; width:70px;}
-          75%  {left:250px; width:90px;}
-          80%  {left:275px; width:70px;}
-          85%  {left:300px; width:90px;}
-          90%  {left:325px; width:70px;}
-          95%  {left:350px; width:90px;}
-          100% {left:365px; width:70px;}
+         
       }
     </style>
   </head>
