@@ -24,6 +24,16 @@
         left:425px;
       }
 
+      #static:hover{
+        -webkit-animation: rotate 1s ease-in-out; /* Chrome, Safari, Opera */
+        animation: myfirst 1s ease-in-out;
+      }
+
+      #animateMe:hover{
+        -webkit-animation: rotate 1s infinite; /* Chrome, Safari, Opera */
+        animation: myfirst 1s infinite;
+      }
+
       #animateMe {
         float: left;
         margin: 4em 1em;
@@ -55,6 +65,16 @@
           90%  {left:325px; width:70px;}
           95%  {left:350px; width:90px;}
           100% {left:365px; width:70px;}
+      }
+
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes rotate{
+         100% { -webkit-transform: rotate(360deg); }
+      }
+
+      /* Chrome, Safari, Opera */
+      @keyframes rotate{
+        100% { transform: rotate(360deg); }
       }
 
       /* Standard syntax */
