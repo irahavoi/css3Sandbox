@@ -24,13 +24,9 @@
         left:425px;
       }
 
-      #static:hover{
-        -webkit-animation: rotate 1s infinite; /* Chrome, Safari, Opera */
-        animation: rotate 1s ease-in-out;
-      }
-
-      #animateMe:hover{
-        -webkit-animation: rotate 1s infinite; /* Chrome, Safari, Opera */
+      #static{
+        -webkit-animation: rotate 4s; /* Chrome, Safari, Opera */
+        animation: rotate 4s;
       }
 
       #animateMe {
@@ -125,7 +121,21 @@
 
       /* Chrome, Safari, Opera */
       @-webkit-keyframes rotate{
-         100% { -webkit-transform: rotate(360deg); }
+         0% { }
+         15% { -webkit-transform: rotate(-360deg); }
+         30% { 
+          -webkit-transform: rotate(180deg) ; /* Chrome, Safari, Opera */
+          transform: rotate(180deg); 
+         }
+         95% { 
+          -webkit-transform: rotate(180deg) ; /* Chrome, Safari, Opera */
+          transform: rotate(180deg); 
+         }
+         100% { 
+          -webkit-transform: rotate(0deg) ; /* Chrome, Safari, Opera */
+          transform: rotate(0deg); 
+         }
+
       }
 
       /* Chrome, Safari, Opera */
